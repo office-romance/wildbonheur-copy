@@ -1,9 +1,29 @@
-<form name="contact" method="POST" data-netlify="true">
+<form name="contact" method="POST" netlify>
   <label for="name">Name</label>
-  <input type="text" name="name" id="name" autocomplete="name" placeholder="Your name" title="Please enter your name" required>
+  <input type="text" name="name" id="name" autocomplete="name" placeholder="Name" title="Please enter your name" required>
+  <label for="telenummer">Telenummer</label>
+  <input type="number" name="telefonnummer" id="telefonnummer" autocomplete="telefonnummer" placeholder="Telefonnummer" title="Please enter your number" required>
   <label for="email">Email</label>
-  <input type="email" name="email" id="email" autocomplete="email" placeholder="Your email address" title="The domain portion of the email address is invalid (the portion after the @)." pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$" required>
-  <label for="message">Message</label>
-  <textarea name="message" id="message" placeholder="Write your message here" rows="7" required></textarea>
-  <button type="submit">Send Message</button>
+  <input type="email" name="email" id="email" autocomplete="email" placeholder="Email Adresse" title="The domain portion of the email address is invalid (the portion after the @)." pattern="^([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x22([^\x0d\x22\x5c\x80-\xff]|\x5c[\x00-\x7f])*\x22))*\x40([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d)(\x2e([^\x00-\x20\x22\x28\x29\x2c\x2e\x3a-\x3c\x3e\x40\x5b-\x5d\x7f-\xff]+|\x5b([^\x0d\x5b-\x5d\x80-\xff]|\x5c[\x00-\x7f])*\x5d))*(\.\w{2,})+$" required>
+  <label for="bestellung">Bestellung</label>
+  <textarea name="bestellung" id="bestellung" placeholder="Anzahl Boxen" rows="3" required></textarea>
+  <select id="date" name="date">
+   <label for="select">Datum</label>
+    <option value="datum">Datum</option>
+    <option value="15.03">15.03</option>
+    <option value="16.03">16.03</option>
+    <option value="17.03">17.03</option>
+    <option value="18.03">18.03</option>
+    <option value="19.03">19.03</option>
+    <option value="20.03">20.03</option>
+    <option value="21.03">21.03</option>
+  </select>
+  <label for="uhrzeit">Uhrzeit</label>
+  <input type="text" name="uhrzeit" id="uhrzeit" autocomplete="uhrzeit" placeholder="Uhrzeit (uu.mm)" title="Please enter when you want it ready" required>
+  <select id="abholung" name="abholung">
+  <label for="select"></label>
+    <option value="abholung">Abholung</option>
+    <option value="lieferung">Wünschen sie ihre Bestellung heim geliefert, so bestellen sie ihre Boxen bitte bei www.Dabbavelo.ch</option>
+  </select>
+  <button type="submit" name="submit">Bestellen</button>
 </form>
