@@ -1,6 +1,6 @@
 <form name="contact" method="POST" netlify>
   <label for="name">Name</label>
-  <input type="text" name="name" id="name" autocomplete="name" placeholder="Name" title="Please enter your name" required>
+  <input type="text" name="name" id="name" autocomplete="name" placeholder="Name" title="Please enter your name" required style="min-width: 600px">
   <label for="telenummer">Telenummer</label>
   <input type="number" name="telefonnummer" id="telefonnummer" autocomplete="telefonnummer" placeholder="Telefonnummer" title="Please enter your number" required>
   <label for="email">Email</label>
@@ -20,10 +20,6 @@
   </select>
   <label for="uhrzeit">Uhrzeit</label>
   <input type="text" name="uhrzeit" id="uhrzeit" autocomplete="uhrzeit" placeholder="Uhrzeit (uu.mm)" title="Please enter when you want it ready" required>
-  <select id="abholung" name="abholung">
-  <label for="select"></label>
-    <option value="abholung">Abholung</option>
-    <option value="lieferung">Wünschen sie ihre Bestellung heim geliefert, so bestellen sie ihre Boxen bitte bei www.Dabbavelo.ch</option>
-  </select>
+
   <button type="submit" name="submit">Bestellen</button>
 </form>
