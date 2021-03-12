@@ -1,29 +1,42 @@
 :root {
-	--primary: blue;
-	--secondary: white;
-	--background: #FFF0EB;
+	--primary: #ffffff;
+	--secondary:  #e8662a;
+	--background: #cececd;
 }
 
 *, *:before, *:after {
   box-sizing: border-box;
 }
 
+@media (min-width: 640px) { body {font-size:1rem;} } 
+@media (min-width:960px) { body {font-size:1.2rem;} } 
+@media (min-width:1100px) { body {font-size:1.5rem;} } 
+
 html,
 body {
 	padding: 0;
 	margin: 0;
-	font-family: "Avenir", "Avenir Next", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 100;
+	color: #ffffff;
+	text-align: center;
 }
 
 body {
-	display: grid;
+	display: flex;
+	flex-direction: column;
 	height: 100vh;
+	text-emphasis: center;
 	grid-template-rows: auto 1fr auto;
 	background-color: var(--background);
+	@media (min-width: 900px) {
+		width: 50%;
+		margin-bottom: 4rem;
+	  }
 }
 
 main {
-	max-width: 37.5em;
+	max-width: 40em;
 }
 
 p,
@@ -35,6 +48,8 @@ code {
 a[href],
 a[href]:visited {
 	color: var(--primary);
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 100;
 }
 
 a[href]:not(:hover) {
@@ -44,16 +59,34 @@ a[href]:not(:hover) {
 img {
 	max-width: 100%;
 	height: auto;
+	display: block;
+	margin: auto;
+	flex: 1;
+	@media (min-width: 1100px) {
+        display: flex;
+        svg {
+          width: 80px;
+          height: auto;
+          margin-top: 20px;
+        }
 }
 
 header,
-main,
-footer {
+main
+ {
 	padding: 1em;
+	justify-content: center;
+ }
+ footer {
+	padding: 1em;
+	margin-bottom: auto;
+	flex: 4;
 }
 
 main {
 	padding-bottom: 2em;
+	flex: 2;
+	justify-content: center;
 }
 
 main :first-child,
@@ -82,19 +115,27 @@ pre {
 header > em {
 	display: block;
 	font-size: 2em;
-	margin: .67em 0;
-	font-weight: bold;
+	font-weight: 100;
 	font-style: normal;
+	margin: .67em 0;
 }
 
 /* Header Nav */
 header nav ul {
-	padding: 0;
+	padding: 2em 0 0 0;
 	list-style: none;
+	font-size: 2em;
+	flex: 3;
+    @media (min-width: 1100px) {
+		width: calc(100% - 600px);
+	  }
 }
 
 header nav ul :first-child {
-	margin-left: 0;
+	margin-right: 0px;
+	margin-left: 500px;
+	margin-top: 50px;
+	padding-right: 1px;
 }
 
 header nav li {
@@ -105,6 +146,7 @@ header nav li {
 header nav li a {
 	padding: .25em .5em;
 	border-radius: .25em;
+	font-weight: 100;
 }
 
 header nav li a[href]:not(:hover) {
@@ -112,14 +154,17 @@ header nav li a[href]:not(:hover) {
 }
 
 header nav li a[data-current="current item"] {
-	background-color: white;
+	background-color: none;
+	font-family: yu-mincho-pr6,sans-serif;
+	font-weight: lighter;
+	font-size: 0px;
 }
 
 /* Posts List */
 article {
 	margin-bottom: 1em;
 	padding-bottom: 1em;
-	border-bottom: 1px solid #eee;
+	border-bottom: 1px solid #ffffff;
 	border-bottom: 1px solid var(--secondary);
 }
 
@@ -145,6 +190,7 @@ a[rel="tag"]:visited {
   border-radius: .25em;
   text-decoration: none;
 	margin: 0 .5em .5em 0;
+	text-decoration-color: #ffffff;
 }
 
 a[rel="tag"]:hover {
@@ -161,6 +207,7 @@ a[rel="tag"]:last-child {
 form {
   display: grid;
 	padding: 2em 0;
+	justify-content: center;
 }
 
 form label {
@@ -174,16 +221,31 @@ button {
   padding: 1em;
   margin-bottom: 1em;
 	font-size: 1rem;
-	font-family: "Avenir", "Avenir Next", sans-serif;
+	font-family: yu-mincho-pr6,sans-serif;
 }
 
 input,
 textarea {
-	border: 1px solid black;
+	border: 1px solid  #e8662a;
 }
 
+input,
+select {
+	border: 1px solid  #e8662a;
+}
+
+input,
+select,
 button {
-	border: 1px solid var(--primary);
+	width: 100%;
+	padding: 1em;
+	margin-bottom: 1em;
+	  font-size: 1rem;
+	  font-family: yu-mincho-pr6,sans-serif;
+  }
+
+button {
+	border: 1px solid var(--secondary);
 	background-color: var(--primary);
 	color: var(--secondary);
 	cursor: pointer;
@@ -193,4 +255,23 @@ button {
 	:root {
 		font-size: 1.1rem;
 	}
+}
+
+@font-face {
+	font-family: PanamaBold;
+	src: url('/static/fonts/PanamaMonospaceBold.woff') format('woff');
+	font-weight: 500;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: PanamaItalic;
+	src: url('/static/fonts/PanamaMonospaceItalic.woff') format('woff');
+	font-weight: 400;
+	font-display: swap;
+}
+@font-face {
+	font-family: yu-mincho-pr6,sans-serif;
+	font-weight: 400;
+	font-style: normal;
 }

@@ -3,18 +3,14 @@ layout: layouts/home.njk
 title: Home
 date: 2016-01-01T00:00:00.000Z
 permalink: /
-eleventyNavigation:
-  key: Home
-  order: 0
 ---
-# Welcome
+<picture>
+  <source type="image/png" srcset="/static/img/Bonheur_Fenster_21-01.png 2000w, /static/img/Bonheur_Fenster_21-01.png 2400w, /static/img/Bonheur_Fenster_21-01.png 3000w">
+  <img src="/static/img/Bonheur_Fenster_21-01.png" width="1800" height="3000" alt="Menu" loading="lazy" decoding="async">
+</picture>
 
-This is a template for building a simple blog website with the [Eleventy static site generator](https://www.11ty.io), with deployment to [Netlify](https://www.netlify.com).
+Lauren hat die klassische Bentōbox neu definiert. Die Mezseki. Vegan, natürlich.
 
-Includes [Netlify CMS](https://www.netlifycms.org) for WYSIWYG content editing, and [Netlify Forms](https://www.netlify.com/docs/form-handling) for processing your site's form data.
+Jade hat mal wieder passend dazu einen Drink kreiert.
 
-For more info on installation and usage, view the [project repo]({{ pkg.repository.url }}) on GitHub.
-
-Or click the button below to deploy your own copy of this project to Netlify.
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/danurbanowicz/eleventy-netlify-boilerplate&stack=cms)
+Das ist alles.
