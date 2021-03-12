@@ -15,4 +15,4 @@ Abholung:
 Mezseki Box
 CHF 49.00
 
-Wünschen sie ihre Bestellung heim geliefert, so bestellen Sie ihre Boxen bequem bei <a href="www.dabbavelo.ch"> Dabbavelo </a>
+Wünschen sie ihre Bestellung heim geliefert, so bestellen Sie ihre Boxen bequem bei <a href="https://www.dabbavelo.ch"> Dabbavelo</a>.
