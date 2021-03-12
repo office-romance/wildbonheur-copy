@@ -12,8 +12,5 @@ eleventyNavigation:
 Bitte füllen sie das untenstehende Formular aus. Bei Abholung vor Ort erfolgt die Bezahlung vor Ort.
 
 Abholung:
-CHF 54.00
-
-Dabbavelo:
-CHF 59.00
-(+7 CHF einmalig)
+Mezseki Box
+CHF 49.00
