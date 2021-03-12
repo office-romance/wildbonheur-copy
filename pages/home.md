@@ -22,7 +22,7 @@ permalink: /
 
 </div>
 <div style="text-align: center; margin-top: 20px;">
-<a href="/vorbestellen/" style="font-size: 25px; color: #e8662a">JETZT VORBESTELLEN</a>
+<a href="/vorbestellen/" style="font-size: 35px; color: #e8662a">JETZT VORBESTELLEN</a>
 
 </div>
 
