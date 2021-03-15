@@ -9,10 +9,10 @@ eleventyNavigation:
   key: JETZT VORBESTELLEN
   order: 0
 ---
-Bitte füllen sie das untenstehende Formular aus. Bei Abholung erfolgt die Bezahlung vor Ort.
+Bitte füllen Sie das untenstehende Formular aus. Bei Abholung erfolgt die Bezahlung vor Ort.
 
 Abholung:
 Mezseki Box
 CHF 49.00
 
-Wünschen sie ihre Bestellung heim geliefert, so bestellen Sie ihre Boxen bequem bei <a href="https://www.dabbavelo.ch"> Dabbavelo</a>.
+Wünschen Sie ihre Bestellung heim geliefert, so bestellen Sie ihre Boxen bequem bei <a href="https://www.dabbavelo.ch"> Dabbavelo</a>.
